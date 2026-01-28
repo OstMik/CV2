@@ -2,11 +2,11 @@
   color-scheme: only light;
   --page-width: 210mm;
   --page-height: 297mm;
-  --page-margin: 16mm;
+  --page-margin: 14mm;
   --text-color: #1f1f1f;
-  --muted-color: #4f4f4f;
-  --accent-color: #1b4a5f;
-  --border-color: #b7b7b7;
+  --muted-color: #5c5c5c;
+  --accent-color: #1e5870;
+  --border-color: var(--muted-color);
 }
 
 * {
@@ -25,8 +25,7 @@ body {
 }
 
 body {
-  line-height: 1.45;
-  font-size: 10.6pt;
+  line-height: 1.35;
 }
 
 .document {
@@ -56,29 +55,24 @@ body {
   padding: var(--page-margin);
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
 }
 
 .cv-layout {
   display: grid;
-  grid-template-columns: 64mm 1fr;
-  gap: 12mm;
+  grid-template-columns: 62mm 1fr;
+  gap: 11mm;
 }
 
 .cv-sidebar,
 .cv-main {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-}
-
-.cv-main {
-  padding-left: 8mm;
-  border-left: 0.6pt solid var(--border-color);
+  gap: 10px;
 }
 
 .name {
-  font-size: 23pt;
+  font-size: 22pt;
   margin: 0;
   text-transform: uppercase;
   color: var(--accent-color);
@@ -86,13 +80,13 @@ body {
 
 .role {
   margin: 0;
-  font-size: 11pt;
+  font-size: 10.6pt;
   color: var(--muted-color);
 }
 
 .photo-block {
-  width: 38mm;
-  height: 50mm;
+  width: 35mm;
+  height: 45mm;
   border-radius: 2mm;
   border: 0.6pt solid var(--border-color);
   background: #ffffff;
@@ -112,9 +106,9 @@ body {
 }
 
 .section-title {
-  font-size: 10.4pt;
+  font-size: 10.2pt;
   margin: 0 0 4px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   border-bottom: 0.6pt solid var(--border-color);
   padding-bottom: 3px;
@@ -127,7 +121,7 @@ body {
 .section-group {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
 }
 
 .contact-group {
@@ -140,14 +134,14 @@ body {
 
 .list {
   margin: 0;
-  padding-left: 14px;
+  padding-left: 12px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 4px;
 }
 
 .list li {
-  font-size: 10pt;
+  font-size: 9.9pt;
 }
 
 .formation-item {
@@ -159,25 +153,25 @@ body {
 
 .formation-year {
   margin: 0;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 10pt;
 }
 
 .formation-title,
 .formation-school {
   margin: 0;
-  font-size: 10.2pt;
+  font-size: 10.1pt;
 }
 
 .cv-main p {
   margin: 0;
-  font-size: 10.7pt;
+  font-size: 10.5pt;
 }
 
 .experience-item {
   display: grid;
-  gap: 6px;
-  padding-bottom: 9px;
+  gap: 5px;
+  padding-bottom: 8px;
   border-bottom: 0.6pt solid var(--border-color);
 }
 
@@ -194,41 +188,41 @@ body {
 
 .experience-role {
   margin: 0;
-  font-weight: 700;
-  font-size: 10.6pt;
+  font-weight: 600;
+  font-size: 10.4pt;
 }
 
 .experience-place,
 .experience-date {
   margin: 0;
-  font-size: 10.2pt;
+  font-size: 10.1pt;
   color: var(--muted-color);
 }
 
 .cover-letter {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 16px;
 }
 
 .letter-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 22px;
+  gap: 18px;
   border-bottom: 0.6pt solid var(--border-color);
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   break-inside: avoid;
   page-break-inside: avoid;
 }
 
 .letter-header .name {
-  font-size: 21pt;
+  font-size: 20pt;
 }
 
 .letter-contact {
   text-align: right;
-  font-size: 10.4pt;
+  font-size: 10.2pt;
   color: var(--muted-color);
 }
 
@@ -239,8 +233,8 @@ body {
 .letter-body {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  font-size: 11pt;
+  gap: 12px;
+  font-size: 10.9pt;
 }
 
 .letter-body p {
