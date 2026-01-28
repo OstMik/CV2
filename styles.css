@@ -6,8 +6,6 @@
   --text-color: #1f1f1f;
   --muted-color: #5c5c5c;
   --accent-color: #1e5870;
-  --accent-soft: #f3f7fa;
-  --accent-border: #c6d6df;
   --border-color: var(--muted-color);
 }
 
@@ -73,13 +71,6 @@ body {
   gap: 10px;
 }
 
-.cv-sidebar {
-  background: var(--accent-soft);
-  border: 0.8pt solid var(--accent-border);
-  border-radius: 4mm;
-  padding: 6mm 5mm;
-}
-
 .name {
   font-size: 22pt;
   margin: 0;
@@ -97,9 +88,8 @@ body {
   width: 35mm;
   height: 45mm;
   border-radius: 2mm;
-  border: 1pt solid var(--accent-color);
+  border: 0.6pt solid var(--border-color);
   background: #ffffff;
-  padding: 2mm;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,7 +106,7 @@ body {
 }
 
 .section-title {
-  font-size: 10.8pt;
+  font-size: 10.2pt;
   margin: 0 0 4px;
   font-weight: 600;
   text-transform: uppercase;
@@ -125,11 +115,6 @@ body {
   break-inside: avoid;
   page-break-inside: avoid;
   color: var(--accent-color);
-}
-
-.sidebar-group p,
-.sidebar-group li {
-  font-size: 10pt;
 }
 
 .sidebar-group,
@@ -155,6 +140,10 @@ body {
   gap: 4px;
 }
 
+.list li {
+  font-size: 9.9pt;
+}
+
 .formation-item {
   display: grid;
   gap: 2px;
@@ -165,11 +154,13 @@ body {
 .formation-year {
   margin: 0;
   font-weight: 600;
+  font-size: 10pt;
 }
 
 .formation-title,
 .formation-school {
   margin: 0;
+  font-size: 10.1pt;
 }
 
 .cv-main p {
