@@ -87,8 +87,8 @@ body {
 .photo-block {
   width: 35mm;
   height: 45mm;
-  border-radius: 2mm;
-  border: 0.6pt solid var(--border-color);
+  border-radius: 0;
+  border: 0.8pt solid var(--border-color);
   background: #ffffff;
   display: flex;
   align-items: center;
@@ -130,6 +130,7 @@ body {
 
 .contact-group p {
   margin: 0;
+  font-size: 9.9pt;
 }
 
 .list {
